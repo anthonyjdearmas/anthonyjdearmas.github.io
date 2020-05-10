@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--This needs to load before all other stylesheets!-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/projects.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+        
+
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <title id="myname">Anthony DeArmas</title>
+
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+    </head>
+
+
+
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: rgb(0, 0, 0, 0.075);" id="mainNav">
+        <a class="navbar-brand" href="index.html"><h1 id="navbar_title"><strong>Anthony DeArmas</strong></h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link scroll home" href="index.html" id="nav-link1">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll about" href="index.html#aboutme" id="nav-link2">About Me</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html" id="nav-link3">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nbviewer.jupyter.org/github/ajd249/ajd249.github.io/blob/master/cs_newresume.pdf"  target="_blank" id="nav-link4">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+      <div class="accordian">
+
+        <div class="card">
+            <div class="card-header">
+               <h3>Project 1 </h3>
+               <span class="fa fa-minus"></span>
+            </div>
+            <div class="card-body">
+              <p>(This project is not yet implemented.)</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+               <h3>Project 2</h3>
+               <span class="fa fa-plus"></span>
+            </div>
+            <div class="card-body">
+              <p>(This project is not yet implemented.)</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+               <h3>Project 3 </h3>
+               <span class="fa fa-plus"></span>
+            </div>
+            <div class="card-body">
+              <p>(This project is not yet implemented.)</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Project 4 </h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="card-body">
+              <p>(This project is not yet implemented.)</p>
+            </div>
+        </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Project 5 </h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="card-body">
+              <p>(This project is not yet implemented.)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+      <script>
+        $(document).ready(function(){
+          $(".card-header").click(function(){
+             // self clicking close
+             if($(this).next(".card-body").hasClass("active")){
+               
+             }
+      
+           $(".card .card-body").slideUp()
+           $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
+             $(this).next(".card-body").addClass("active").slideDown()
+              $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+      
+          })
+        })
+      
+      </script>
+
+
+
+        <!--This needs to stay here in order for Bootstrap to work!-->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html
