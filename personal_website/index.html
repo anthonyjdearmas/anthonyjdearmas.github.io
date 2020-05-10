@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--This needs to load before all other stylesheets!-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+        
+
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+
+        <title id="myname">Anthony DeArmas</title>
+
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- Site Animations (Smooth scroll, buttons, ect..) -->
+        <script  src="js/anims_index.js"></script>
+
+    </head>
+
+
+
+    <body>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" style="background-color: rgb(0, 0, 0, 0.075);" id="mainNav">
+        <a class="navbar-brand" href="index.html"><h1 id="navbar_title"><strong>Anthony DeArmas</strong></h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link scroll home" href="#homepage" id="nav-link1">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll about" href="#aboutme" id="nav-link2">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html" id="nav-link3">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nbviewer.jupyter.org/github/ajd249/ajd249.github.io/blob/master/cs_newresume.pdf"  target="_blank" id="nav-link4">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+        
+        
+
+        <section id="homepage" class="page-section clearfix">
+          <!-- Spacing -->
+          <div style="height: 50px;">&nbsp;</div>
+          
+          <div class="container">
+            <div class="intro">
+              <img class="intro-img-norm img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
+              <img class="intro-img-mobile img mt-2 mb-lg-0 rounded-circle" src="img/intromb.jpg" alt="">
+              <div class="intro-text text-center p-5 rounded">
+                <h2 class="section-heading text-left"><span class="section-heading-upper">Welcome,</span></h2>
+                <p class="text-left ml-5 mt-2">
+                  My name is Anthony DeArmas. I made this website,
+                  so you can learn more about me and my projects. I am
+                  interested in artifical intellgience, machine learning,
+                  and medical coding. Below you can find links to my GIthub, LinkedIn,
+                  and resume.
+                </p>
+                <div class="container" style="height: 100px;">
+                  <div class="row">
+                      <div class="col">
+                        <a href="https://github.com/ajd249" target="_blank">
+                          <img id="icon-git" class="img-fluid mt-3 ml-auto mx-auto icon" src="img/icons/github.png"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ajd249/" target="_blank">
+                          <img id="icon-lnki" href="https://www.linkedin.com/in/ajd249/" class="img-fluid mt-3 icon" src="img/icons/linkedin.png"/>
+                        </a>
+                        <a href="https://nbviewer.jupyter.org/github/ajd249/ajd249.github.io/blob/master/cs_newresume.pdf" target="_blank">
+                          <img id="icon-res" class="img-fluid mt-3 icon" src="img/icons/resume.png"/>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- Spacing -->
+      <div id="spacing1">&nbsp;</div>
+
+      <section id="aboutme">
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div id="abbox" class="text-center mx-auto rounded">
+              <br>
+              <h2 id="h_title" class="text-center mt-2">About Me</h2>
+              <hr style="width: 90%; background-color: whitesmoke;">
+
+              <div class="row mt-5">
+                <div class="col">
+                  <img id="abimg" class="img-fluid mr-5" src="img/abpic.jpg" alt="">
+                </div>
+                <div class="col">
+                  <p id="abcontent" class="text-left">
+                    &emsp;I am from Pennsylvania and based out of the Philadelphia area. I am currently a Junior pursuing a
+                    Bachelor of Arts in Computer Science at Cornell University.
+                    <br>
+                    <br>
+                    &emsp;This summer I will be completing a program where I explore research in Computer Science. This program
+                    will expose me to various resources on how to get involved in research and better prepare me for future
+                    classes at Cornell. In addition, we will be going to New York and attending career seminars with 
+                    companies like: Google, Amazon and IBM.
+                    <br>
+                    <br>
+                    &emsp;In my spare time, I enjoy volunteering. I recently have volunteered for St.Luke's University Health
+                    Network Cornell Catholic Community. In addition, I like to go outside. Some of my favorite outdoor
+                    hobbies include fishing, archery and riding motorcycles.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer text-faded text-center py-5">
+          <div class="container">
+          </div>
+      </footer>
+
+
+
+        <!--This needs to stay here in order for Bootstrap to work!-->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html
