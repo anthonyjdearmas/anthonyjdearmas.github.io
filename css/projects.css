@@ -148,6 +148,15 @@ h3 {
   background-color: rgb(51, 67, 162);
 }
 
+/* Specific Project Styling */
+#gmodstore_logo{
+  width: 20%;
+  height: auto;
+  
+
+}
+
+/* Site anims */
 @keyframes fade {
   from {opacity: 0;}
   to {opacity: 1;}
