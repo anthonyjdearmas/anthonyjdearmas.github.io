@@ -14,6 +14,7 @@
   h4,
   h5,
   h6,
+  li,
   p {
     color: whitesmoke;
     font-family: 'Abel';
@@ -148,6 +149,10 @@ h3 {
   background-color: rgb(51, 67, 162);
 }
 
+/* Specific Project Styling */
+
+
+/* Site anims */
 @keyframes fade {
   from {opacity: 0;}
   to {opacity: 1;}

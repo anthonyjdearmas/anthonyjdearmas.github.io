@@ -18,10 +18,7 @@
 
         <!-- JQuery CDN -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-
     </head>
-
 
 
     <body>
@@ -51,15 +48,124 @@
       
       <div class="accordian">
 
+        <!-- Project 1 -->
         <div class="card">
             <div class="card-header">
-               <h3>Project 1 </h3>
+              <img class="pull-left mt-2 ml-2 pr-2" src="img/gmodstore_notifier.png" style="width: 50px; height: auto;">
+               <h3>GmodStore Job Notifier</h3>
+               <h6>Date Completed: 14 June 2020</h6>
+               <h6>Project Languages: Java, Lua</h6>
+               <h5><a style="color:whitesmoke" href="https://github.com/anthonyjdearmas/GmodStore-Job-Notifer" target="_blank"><u>GitHub</u></a></h5>
                <span class="fa fa-minus"></span>
             </div>
             <div class="card-body">
-              <p>(This project is not yet implemented.)</p>
+              <div class="container-fluid pb-5">
+                <h2>Background</h2>
+                <p>
+                  Garry's Mod is a very popular sandbox computer game that was created in 2004. In the game, people are able to create
+                  servers with various mods that are created using the Lua programming language. Many users want to create these servers
+                  for their friends and themselves to enjoy, but are not sure how to code. This is why the Garry's Mod script
+                  market place, <a href="https://www.gmodstore.com/jobmarket" target="_blank" style="color:white;"><u>https://www.gmodstore.com</u></a>
+                  , was created. Through the market place, people who want a mod to be created can post a job listing for a freelance developer, such as
+                  myself, to apply. However, developers need to be quick to see the new jobs and apply because you compete with other
+                  developers. I would find myself missing out on a lot of jobs I would like to do because I was not refreshing the page
+                  every 5 minutes to see new listings. So I decided to create a Java web-scraping program that will automatically notify
+                  me of new jobs!
+                </p>
+              </div>
+              <div class="container-fluid pb-5">
+                <h2>What I learned</h2>
+                <ul>
+                  <li>How to efficently web scrape a website for information via JSoup</li>
+                  <li>Java-based GUI development via JSwing</li>
+                  <li>Synchronization</li>
+                  <li>Netlibrary usage (Lua)</li>
+                  <li>HUD design (Lua)</li>
+                  <li>Client communication and interaction</li>
+                </ul>
+              </div>
+              <div class="container-fluid">
+                <h2>Project Media</h2>
+                <div class="row">
+                  <div class="col-md-12 pb-5">
+                    <img id="gmodnotifier_app" class="img-fluid mx-auto d-block" src="img/project_gmodnotif/gmodnotifier_app.png" alt=""  style="width: 75%; height: auto;">
+                    <br>
+                    <h5 class="text-center">The GmodStore job notifier that I created to be able to apply to more jobs<h5>
+                  </div>
+                  <h2>Lua Jobs That I Completed</h2>
+                  <div class="col-md-12">
+                    <img id="app_jobex2" class="img-fluid mx-auto d-block" src="img/project_gmodnotif/ex_job2.jpg" alt=""  style="width: 75%; height: auto;">
+                    <br>
+                    <h6 style="margin-left: 15%;">
+                      <strong>Job Price: </strong> $40.00<br>
+                      <strong>Job Description: </strong> Turn my prop model into flyable planes that users can drive. Planes must also drop bombs and carry 8 passengers inside.<br>
+                    <h6>
+                  </div>
+                  <hr style="background-color: whitesmoke; width: 80%;">
+
+                  <div class="col-md-12">
+                    <video class="mx-auto d-block" width="75%" height="auto" controls>
+                      <source src="img/project_gmodnotif/ex_job1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <br>
+                    <h6 style="margin-left: 15%;">
+                      <strong>Job Price: </strong> $25.00<br>
+                      <strong>Job Description: </strong> We are looking for a custom HUD with xp integration. Artwork will be needed from your end as sadly that is part of why we are placing this work order.
+                      We are looking for a wow-style art with the more circular pattern, Unlike the more square styles you see in-game currently.<br>
+                    <h6>
+                  </div>
+                  <hr style="background-color: whitesmoke; width: 80%;">
+                  <div class="col-md-12">
+                    <img id="app_jobex3" class="img-fluid mx-auto d-block" src="img/project_gmodnotif/ex_job3.png" alt=""  style="width: 75%; height: auto;">
+                    <br>
+                    <p style="margin-left: 15%;">
+                      <strong>Job Price: </strong> $160.00<br>
+                      <strong>Job Description: (This client wanted me to create a skill system for his server that matched his description...)</strong>
+                      <br>
+                      Skills - The number next to the skill is how many you can unlock.<br>
+                      Strength - Add 5 points to your nutscript strength. [0/15]<br>
+                      Stamina - Add 5 points to your nutscript stamina. [0/15]<br>
+                      Endurance  - Add 5 points to your nutscript strength. [0/15]<br>
+                      Jump Power  - Increase your jump height by 5% each stack [0/10]<br>
+                      Damage Resistance - Reduce damage from NPCs by 5% each stack [0/10]<br>
+                      Health - Add 10 permanent health by each stack [0/30]<br>
+                      Armor - Add 10 permanent armor by each stack [0/15]<br>
+                      Fall Damage - Reduce fall damage by 2% each stack [0/25]<br>
+                      Damage Output - Increase the damage you deal by 3% each stack. [0/15]<br>
+                      Demolitionist - Reduce the damage taken from explosives by 5% each stack [0/10]<br>
+                      Paycheck - Your base salary is increased by 10 credits each stack. [0/20]<br>
+                      <br>
+                      After one prestige you will receive a “Prestige Token” and you can use it to unlock one of these.<br>
+                      Prestige Abilities (More prestige abilities coming soon. I still need to think about them)<br>
+                      Regeneration - Gives you the ability to regenerate HP | Heals you 2% HP every 20 seconds until half HP.<br>
+                      Inventory Space - Increases your nutscript inventory to an 8x8<br>
+                      Fresh Start - Resets everything. [Level, Prestiges, Stats, etc..]<br>
+                      Strength Boost - Permanently set your nutscript strength to 30 points<br>
+                      Stamina Boost - Permanently set your nutscript stamina to 30 points<br>
+                      Endurance Boost - Permanently set your nutscript endurance to 30 points<br>
+                      <br>
+                      I would like to create a few commands though that only certain groups can use, I use SAM admin system. The commands would be like<br> 
+                      /skillsetuserpoints “name” “points”<br>
+                      /skillsetuserlevel “name” “level”<br>
+                      /skillresetuser “name” - This would wipe everything.<br>
+                      <br>
+                      Extra things:<br>
+                      I'd like the max level to be “100” and once you reach 100 you are given the ability to prestige.<br>
+                      I'd like there to be 10 prestiges. So 10th prestige would be the max prestige.<br>
+                      I'd like people to be given 1 point every level, so at level 100 if you never spent your points, you would have 100 points. <br>
+                      I'd like it when you prestige you are given the “prestige token” and a free 5 points. <br>
+                      A way to make certain “SAM” groups receive more XP, so like a donator group can receive 1.5x XP.<br>
+                      Killing NPCS/Players give you XP<br>
+                      You get XP just by being on the server<br>
+                      <br>
+                    <p>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
+        <!-- Project 2 -->
         <div class="card">
             <div class="card-header">
                <h3>Project 2</h3>
@@ -69,6 +175,7 @@
               <p>(This project is not yet implemented.)</p>
             </div>
         </div>
+        <!-- Project 3 -->
         <div class="card">
             <div class="card-header">
                <h3>Project 3 </h3>
@@ -78,6 +185,7 @@
               <p>(This project is not yet implemented.)</p>
             </div>
           </div>
+          <!-- Project 4 -->
           <div class="card">
             <div class="card-header">
               <h3>Project 4 </h3>
@@ -87,6 +195,7 @@
               <p>(This project is not yet implemented.)</p>
             </div>
         </div>
+        <!-- Project 5 -->
           <div class="card">
             <div class="card-header">
               <h3>Project 5 </h3>
