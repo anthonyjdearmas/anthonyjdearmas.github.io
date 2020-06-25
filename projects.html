@@ -50,7 +50,6 @@
 
         <!-- Project 1 -->
         <div class="card">
-          <a href="#project_gmodnotif">
             <div class="card-header" id="project_gmodnotif">
               <img class="pull-left mt-2 ml-2 pr-2" src="img/project_gmodnotif/notif_logo.png" style="width: 50px; height: auto;">
                <h3>GmodStore Job Notifier</h3>
@@ -59,7 +58,6 @@
                <h5><a style="color:whitesmoke" href="https://github.com/anthonyjdearmas/GmodStore-Job-Notifer" target="_blank"><u>GitHub</u></a></h5>
                <span class="fa fa-minus"></span>
             </div>
-          </a>
             <div class="card-body">
               <div class="container-fluid pb-5">
                 <h2>Background</h2>
@@ -174,7 +172,6 @@
         </div>
         <!-- Project 2 -->
         <div class="card">
-          <a href="#project_assigner">
           <div class="card-header" id="project_assigner">
             <img class="pull-left mt-1 ml-2 pr-2" src="img/project_jassigner/assign_logo.png" style="width: 65px; height: auto;">
              <h3>Automated Job Assigner</h3>
@@ -183,7 +180,6 @@
              <h5><a style="color:whitesmoke" href="https://github.com/anthonyjdearmas/Job-Assigner" target="_blank"><u>GitHub</u></a></h5>
              <span class="fa fa-plus"></span>
           </div>
-        </a>
             <div class="card-body">
               <div class="container-fluid pb-5">
                 <h2>Background</h2>
@@ -260,8 +256,9 @@
          $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
            $(this).next(".card-body").addClass("active").slideDown()
             $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+            $(this).children("span").scrollIntoView();
 
-        $(this).scrollIntoView();
+        // window.scrollTo(0, 0);
         })
       })
     
