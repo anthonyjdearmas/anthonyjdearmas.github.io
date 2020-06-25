@@ -30,7 +30,6 @@ $(document).ready(function() {
   $(".about").click(function(){
     var $this = $(this);
     if($this.data('clicked')) {
-        console.log("CLICKED ABOUT IS TRUE")
         this.preventDefault();
         window.location.href = 'index.html';
         $([document.documentElement, document.body]).animate({

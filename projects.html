@@ -51,7 +51,7 @@
         <!-- Project 1 -->
         <div class="card">
             <div class="card-header">
-              <img class="pull-left mt-2 ml-2 pr-2" src="img/gmodstore_notifier.png" style="width: 50px; height: auto;">
+              <img class="pull-left mt-2 ml-2 pr-2" src="img/project_gmodnotif/notif_logo.png" style="width: 50px; height: auto;">
                <h3>GmodStore Job Notifier</h3>
                <h6>Date Completed: 14 June 2020</h6>
                <h6>Project Languages: Java, Lua</h6>
@@ -172,44 +172,72 @@
         </div>
         <!-- Project 2 -->
         <div class="card">
-            <div class="card-header">
-               <h3>Project 2</h3>
-               <span class="fa fa-plus"></span>
-            </div>
-            <div class="card-body">
-              <p>(This project is not yet implemented.)</p>
-            </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="card">
-            <div class="card-header">
-               <h3>Project 3 </h3>
-               <span class="fa fa-plus"></span>
-            </div>
-            <div class="card-body">
-              <p>(This project is not yet implemented.)</p>
-            </div>
+          <div class="card-header">
+            <img class="pull-left mt-1 ml-2 pr-2" src="img/project_jassigner/assign_logo.png" style="width: 65px; height: auto;">
+             <h3>Automated Job Assigner</h3>
+             <h6>Date Completed: 23 May 2019</h6>
+             <h6>Project Languages: Python, Kivy</h6>
+             <h5><a style="color:whitesmoke" href="https://github.com/anthonyjdearmas/Job-Assigner" target="_blank"><u>GitHub</u></a></h5>
+             <span class="fa fa-plus"></span>
           </div>
-          <!-- Project 4 -->
-          <div class="card">
-            <div class="card-header">
-              <h3>Project 4 </h3>
-              <span class="fa fa-plus"></span>
-            </div>
             <div class="card-body">
-              <p>(This project is not yet implemented.)</p>
+              <div class="container-fluid pb-5">
+                <h2>Background</h2>
+                <p>
+                  This is my first project! At the time, my dorm had a house manager posistion that was in charge of assigning weekly jobs to
+                  all of the house mates. I would find the house manager spending a lot of his time on assigning jobs. I knew he could get the job
+                  done quicker if he had the right tool. As a result, I decided to use what I learned from my first Computer Science course at
+                  Cornell and design a job assigner program using Python. The house manager was able to use my program to quickly generate
+                  job assignments and save himself plenty of time to do other things!
+                </p>
+              </div>
+              <div class="container-fluid pb-5">
+                <h2>What I learned</h2>
+                <ul style="color: whitesmoke; font-family: 'Abel';">
+                  <li>How to create a GUI using Kivy and Python</li>
+                  <li>Basic data management</li>
+                  <li>Applications of important data structures (lists and dictionaries)</li>
+                  <li>Threading</li>
+                </ul>
+              </div>
+              <div class="container-fluid">
+                <h2>Project Media</h2>
+                <div class="row">
+                  <div class="col-md-12 pb-5">
+                    <img id="jassigner_mainmenu" class="img-fluid mx-auto d-block" src="img/project_jassigner/main_menu.png" alt=""  style="width: 75%; height: auto;">
+                    <br>
+                    <h5 class="text-center">The main menu of the application. You can either configure settings, go to my GitHub or create job assignments here.<h5>
+                  </div>
+                  <div class="col-md-12 pb-5">
+                    <img id="jassigner_configpage" class="img-fluid mx-auto d-block" src="img/project_jassigner/config_page.png" alt=""  style="width: 75%; height: auto;">
+                    <br>
+                    <h5 class="text-center">The configuration screen of the program. You can add or remove jobs and people here, as well as choose an export option.<h5>
+                  </div>
+                  <div class="col-md-12 pb-5">
+                    <img id="jassigner_addorremv" class="img-fluid mx-auto d-block" src="img/project_jassigner/add_element.png" alt=""  style="width: 75%; height: auto;">
+                    <br>
+                    <h5 class="text-center">Here is an example of what it is like to add or remove a person. The same happens for a job!<h5>
+                  </div>
+                  <div class="col-md-12 pb-5">
+                    <img id="jassigner_notifs" class="img-fluid mx-auto d-block" src="img/project_jassigner/custom_notifs.png" alt=""  style="width: 75%; height: auto;">
+                    <br>
+                    <h5 class="text-center">There are custom confirmation notifcations too!<h5>
+                  </div>
+                  <div class="col-md-12 pb-5">
+                    <img id="jassigner_textex" class="img-fluid mx-auto d-block" src="img/project_jassigner/excl_expt.png" alt=""  style="width: 65%; height: auto;">
+                    <img id="jassigner_exclex" class="img-fluid mx-auto d-block" src="img/project_jassigner/txt_expt.png" alt=""  style="width: 65%; height: auto;">
+                    <br>
+                    <h5 class="text-center">Here are what exported assignments look like.<h5>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-        <!-- Project 5 -->
-          <div class="card">
-            <div class="card-header">
-              <h3>Project 5 </h3>
-              <span class="fa fa-plus"></span>
-            </div>
-            <div class="card-body">
-              <p>(This project is not yet implemented.)</p>
-            </div>
-        </div>
+
+
+
+
+          
     </div>
 
 
@@ -217,23 +245,23 @@
 
 
 
-      <script>
-        $(document).ready(function(){
-          $(".card-header").click(function(){
-             // self clicking close
-             if($(this).next(".card-body").hasClass("active")){
-               
-             }
-      
-           $(".card .card-body").slideUp()
-           $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
-             $(this).next(".card-body").addClass("active").slideDown()
-              $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
-      
-          })
+    <script>
+      $(document).ready(function(){
+        $(".card-header").click(function(){
+           // self clicking close
+           if($(this).next(".card-body").hasClass("active")){
+             
+           }
+    
+         $(".card .card-body").slideUp()
+         $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
+           $(this).next(".card-body").addClass("active").slideDown()
+            $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+    
         })
-      
-      </script>
+      })
+    
+    </script>
 
 
 
