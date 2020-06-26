@@ -135,7 +135,7 @@ h3 {
 	display: none;
 }
 /*open one card by default*/
-.accordian .card:nth-child(1) .card-body{
+.accordian .card-body{
  display: block;
 }
 .accordian .card .card-body{

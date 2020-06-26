@@ -56,7 +56,7 @@
                <h6>Date Completed: 14 June 2020</h6>
                <h6>Project Languages: Java, Lua</h6>
                <h5><a style="color:whitesmoke" href="https://github.com/anthonyjdearmas/GmodStore-Job-Notifer" target="_blank"><u>GitHub</u></a></h5>
-               <span class="fa fa-minus"></span>
+               <span class="fa fa-plus"></span>
             </div>
             <div class="card-body">
               <div class="container-fluid pb-5">
@@ -247,18 +247,22 @@
 
     <script>
       $(document).ready(function(){
+        $( ".card-header" ).each(function( index ) {
+          console.log("Found 1!");
+          $(this).next(".card-body").slideUp()
+        });
+
         $(".card-header").click(function(){
            if($(this).next(".card-body").hasClass("active")){
-             
-           }
-    
-         $(".card .card-body").slideUp()
-         $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
-           $(this).next(".card-body").addClass("active").slideDown()
+            $(this).children("span").removeClass("fa-minus").addClass("fa-plus")
+            $(this).next(".card-body").removeClass("active").slideUp()
+          } else {
             $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
-            
-        window.scrollTo(0, 0);
-        })
+            $(this).next(".card-body").addClass("active").slideDown()
+          }
+          
+        });
+
       })
     
     </script>
