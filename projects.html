@@ -45,6 +45,7 @@
         </div>
       </nav>
 
+      <button class="ml-2" onclick="topFunction()" id="backtotopBtn" title="Go to top">Back to Top</button>
       
       <div class="accordian">
 
@@ -248,7 +249,6 @@
     <script>
       $(document).ready(function(){
         $( ".card-header" ).each(function( index ) {
-          console.log("Found 1!");
           $(this).next(".card-body").slideUp()
         });
 
@@ -265,6 +265,23 @@
 
       })
     
+
+    mybutton = document.getElementById("backtotopBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
     </script>
 
 
