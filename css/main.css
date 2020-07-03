@@ -163,7 +163,8 @@
   #abimg{
     height: auto;
     width: auto;
-    left: 0;
+    padding-right: 50%;
+
   }
 
   #abbox {
