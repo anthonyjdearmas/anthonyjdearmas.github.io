@@ -1,88 +1,4 @@
-  /* Overall Document Styling */
-  body{
-      background-image: linear-gradient(rgb(0, 140, 255), rgba(188, 204, 209, 0.65)), url("../img/bg.jpg");
-      font-family: 'Abel', sans-serif;
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-      
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  p {
-    color: whitesmoke;
-    font-family: 'Abel';
-  }
-
-/* Responsiveness for Larger Resolutions */
-@media (min-width: 1926px){
-  
-}
-
- /*Responsiveness for Mobile */
-@media (max-width: 600px){
-
-}
-
-/* Navigation Bar */
-#navbar_title {
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-.nav-link{
-  animation-name: fade;
-  animation-duration: 2s;
-
-}
-
-#nav-link1, #nav-link2, #nav-link3, #nav-link4 {
-  animation: fade 1.0s forwards;
-  animation-duration: 2s;
-  opacity: 0; 
-}
-
-#nav-link1{
-  animation-delay: 0.25s;
-}
-
-#nav-link2{
-  animation-delay: 0.5s;
-}
-
-#nav-link3{
-  animation-delay: 0.75s;
-
-}
-
-#nav-link4{
-  animation-delay: 1s;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link {
-  color: whitesmoke;
-  font-weight: 800;
-}
-
-.navbar-nav .nav-item.active .nav-link {
-  color: rgb(255, 0, 0);
-  background-color: rgba(0, 0, 0, 0.103);
-}
-
-.navbar-brand{
-  color: whitesmoke;
-}
-
-.navbar-dark .nav-item:hover .nav-link {
-    color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.103);
-}
+/* Jquery Accordion Styling */
 
 .accordian{
 	max-width:1200px;
@@ -111,9 +27,11 @@ h3 {
   padding:15px 15px;
   border-radius: 4px;
 }
+
 .accordian .card .card-header {
 	position: relative;
 }
+
 .accordian .card .card-header span{
 	position: absolute;
 	right:10px;
@@ -134,10 +52,11 @@ h3 {
 .accordian .card .card-body{
 	display: none;
 }
-/*open one card by default*/
+
 .accordian .card-body{
  display: block;
 }
+
 .accordian .card .card-body{
 	font-size: 15px;
 	line-height: 24px;
@@ -168,11 +87,6 @@ h3 {
 
 /* Specific Project Styling */
 
-/* Site anims */
-@keyframes fade {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
 @media (max-width: 600px){
   #backtotopBtn {

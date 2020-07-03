@@ -5,8 +5,8 @@ $(document).ready(function() {
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 1200 );
+      scrollTop: $(this.hash).offset().top - 85
+    }, 1000 );
   });
   
   $(window).scroll(function() {
